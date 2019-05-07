@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author       = { "Ruin09" => "shmruin09@gmail.com" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :path => "https://github.com/shmruin/TreeCanvasView.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/shmruin/TreeCanvasView.git", :tag => "1.0.0" }
   spec.source_files = "TreeCanvasView"
 
 end
