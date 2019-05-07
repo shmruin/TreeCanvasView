@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreeCanvasModPopupView" customModule="TreeCanvas" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="hqk-mC-kSi" id="qPf-Ic-vcx"/>
+                <outlet property="btnConfirm" destination="c1V-dz-EJD" id="ISv-9j-pQb"/>
+                <outlet property="modifiedTextInput" destination="LsS-QM-TFt" id="K72-WZ-PLQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e51-T6-ZdF">
+                    <rect key="frame" x="67.5" y="248.5" width="240" height="170"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-QM-TFt">
+                            <rect key="frame" x="30" y="55.5" width="180" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change the row value to?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k30-lC-RUW">
+                            <rect key="frame" x="23" y="19" width="194" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3pU-Vk-g3j">
+                            <rect key="frame" x="0.0" y="130" width="240" height="40"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqk-mC-kSi">
+                                    <rect key="frame" x="0.0" y="0.0" width="119.5" height="40"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-dz-EJD">
+                                    <rect key="frame" x="120.5" y="0.0" width="119.5" height="40"/>
+                                    <color key="backgroundColor" red="0.41773733014593217" green="0.74448328095080341" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="Confirm">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BrD-AS-g1c"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="3J0-bM-fwS" userLabel="width = 220"/>
+                        <constraint firstItem="k30-lC-RUW" firstAttribute="top" secondItem="e51-T6-ZdF" secondAttribute="top" constant="19" id="Bf2-B9-9bc"/>
+                        <constraint firstItem="LsS-QM-TFt" firstAttribute="centerX" secondItem="e51-T6-ZdF" secondAttribute="centerX" id="Eaa-YJ-AMp"/>
+                        <constraint firstAttribute="bottom" secondItem="3pU-Vk-g3j" secondAttribute="bottom" id="QAV-Vg-ZIJ"/>
+                        <constraint firstItem="3pU-Vk-g3j" firstAttribute="leading" secondItem="e51-T6-ZdF" secondAttribute="leading" id="Smf-Eh-zam"/>
+                        <constraint firstAttribute="trailing" secondItem="LsS-QM-TFt" secondAttribute="trailing" constant="30" id="Wik-EQ-iHt"/>
+                        <constraint firstItem="LsS-QM-TFt" firstAttribute="leading" secondItem="e51-T6-ZdF" secondAttribute="leading" constant="30" id="bEZ-2N-PcS"/>
+                        <constraint firstItem="k30-lC-RUW" firstAttribute="centerX" secondItem="e51-T6-ZdF" secondAttribute="centerX" id="fX9-xs-Iak"/>
+                        <constraint firstAttribute="trailing" secondItem="3pU-Vk-g3j" secondAttribute="trailing" id="jyb-gD-TiG"/>
+                        <constraint firstItem="LsS-QM-TFt" firstAttribute="top" secondItem="k30-lC-RUW" secondAttribute="bottom" constant="16" id="n57-An-erw"/>
+                        <constraint firstAttribute="height" constant="170" id="rPX-Fe-VnL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="e51-T6-ZdF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NmQ-Ra-mzc"/>
+                <constraint firstItem="e51-T6-ZdF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TcV-nF-pLq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>
