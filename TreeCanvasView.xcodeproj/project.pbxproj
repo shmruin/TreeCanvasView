@@ -57,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A88AC90E22849B9C008080F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8FDBFCB2281E44E00106122 /* TreeCanvasModPopupView.xib */,
+				A8FDBFC52281E44E00106122 /* TreeCanvasAddPopupView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A8FDBFAC2281E42A00106122 = {
 			isa = PBXGroup;
 			children = (
@@ -76,12 +85,11 @@
 		A8FDBFB82281E42A00106122 /* TreeCanvasView */ = {
 			isa = PBXGroup;
 			children = (
+				A88AC90E22849B9C008080F7 /* Resources */,
 				A8FDBFC12281E44E00106122 /* GlobalEnums.swift */,
 				A8FDBFC32281E44E00106122 /* TreeCanvasAddPopupView.swift */,
-				A8FDBFC52281E44E00106122 /* TreeCanvasAddPopupView.xib */,
 				A8FDBFCE2281E44E00106122 /* TreeCanvasDefaultCell.swift */,
 				A8FDBFCD2281E44E00106122 /* TreeCanvasModPopupView.swift */,
-				A8FDBFCB2281E44E00106122 /* TreeCanvasModPopupView.xib */,
 				A8FDBFC92281E44E00106122 /* TreeCanvasNode.swift */,
 				A8FDBFC42281E44E00106122 /* TreeCanvasView.swift */,
 				A8FDBFCF2281E44E00106122 /* TreeCanvasView+Gesture.swift */,
