@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreeCanvasAddPopupView" customModule="TreeCanvas" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreeCanvasAddPopupView" customModule="TreeCanvasView">
             <connections>
                 <outlet property="btnCancel" destination="hqk-mC-kSi" id="qPf-Ic-vcx"/>
                 <outlet property="btnConfirm" destination="c1V-dz-EJD" id="ISv-9j-pQb"/>

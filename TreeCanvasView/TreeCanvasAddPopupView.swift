@@ -27,7 +27,9 @@ class TreeCanvasAddPopupView: UIView {
     }
     
     private func commonInit() {
-        let view = Bundle.main.loadNibNamed(xibName, owner: self, options: nil)?.first as! UIView
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: xibName, bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         view.frame = self.bounds
         self.addSubview(view)
     }
