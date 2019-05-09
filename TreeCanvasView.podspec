@@ -12,9 +12,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.source       = { :git => "https://github.com/shmruin/TreeCanvasView.git", :tag => "1.0.0" }
   spec.source_files = "TreeCanvasView"
-  spec.resources = "Resources/*.xib"
+  spec.resources = "TreeCanvasView/**/*.{xib}"
   spec.resource_bundles = {
-	'TreeCanvasView' => ['Pod/**/*.xib']
+	'TreeCanvasView' => ['TreeCanvasView/**/*.{xib}']
   }
   spec.swift_version = "5.0" 
 
