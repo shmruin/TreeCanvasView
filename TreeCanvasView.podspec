@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TreeCanvasView"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "A tree style table view, with parent and children rows."
   spec.description  = "TreeCanvasView is a combinded set of tree data structure and tableview.
   Rows can be added, removed, moved and even collapse or expanded."
