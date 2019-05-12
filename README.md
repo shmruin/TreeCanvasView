@@ -1,5 +1,7 @@
 # TreeCanvasView
 
+![Alt text](screenshots/TreeCanvasViewDemo.gif?raw=true "TreeCanvasView Demo")
+
 A tree style table view written in Swift, with parent and children data structure included! 😃  
 Each `TreeCanvasView`'s row is either parent or child (or both). It means Adding a row and data to the table requires relationship.  
 And after rows are set and relationships are created, `TreeCanvasView` will act like real tree structure on table UI.  
