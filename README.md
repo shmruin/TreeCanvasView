@@ -197,6 +197,11 @@ TreeCanvasNode IDs : 0 6 7 4 9 2 10 5 1 3 8
 - **double tab** the row to modify value of the raw
 - A popup will appear and you can change the value to anything you want
 
+## Need more improvement!
+- More user endpoints to custom
+- More feasible architecture to deal with UI and Data
+- Flexibility
+
 ## Built With
 
 `No depenencies` with other library or framework.
