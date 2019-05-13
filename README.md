@@ -193,6 +193,9 @@ TreeCanvasNode IDs : 0 6 7 4 9 2 10 5 1 3 8
 - drag the selected row to the area you want
 - Rows will be swapped after ease
 
+### Modify the value
+- **double tab** the row to modify value of the raw
+- A popup will appear and you can change the value to anything you want
 
 ## Built With
 
